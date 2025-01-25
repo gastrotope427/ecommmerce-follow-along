@@ -10,12 +10,12 @@ process.on("uncaughtException", (err) => {
 // Config
 if (process.env.NODE_ENV !== "PRODUCTION") {
     require("dotenv").config({
-        path: "backend/config/.env",
+        path: "config/.env",
     });
 }
 
 // Connect Database
-connectDatabase();
+connectdatabase();
 
 // Create Server
 const server = app.listen(process.env.PORT, () => {
