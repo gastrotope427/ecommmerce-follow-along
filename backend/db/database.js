@@ -10,5 +10,7 @@ const connectdatabase = () => {
         console.error(`database connection failed: ${err.message}`);
         process.exit(1);
     });
+
+    
 };
 module.exports = connectdatabase;
