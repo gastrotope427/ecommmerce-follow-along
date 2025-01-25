@@ -40,9 +40,20 @@ Configured Tailwind CSS for streamlined styling.
 Added optional extensions for improving development efficiency.
 Built a functional and styled Login Page for the frontend.
 
-### *Milestone 3 :
+### Milestone 3 :
 
 Set up dedicated folders for organizing backend code effectively.
 Initialized and configured a Node.js server to handle API requests.
 Connected the application to MongoDB to store and manage data.
 Implemented basic error handling to ensure smooth server operation.
+
+
+
+### Milestone 4 :
+ created a User Model to define how user data is structured in the database  also developed a User Controller to manage user interactions, like adding or retrieving data. Additionally, configured Multer to handle file uploads, allowing users to store files such as images.
+ 
+
+### milestone 5 (Frontend - Signup page) :
+
+
+developed the frontend signup page using React. The page includes a form for users to register, with input validation for fields like email and password.  integrated the page with the backend API to handle user registration and implemented error handling to ensure a smooth user experience.
