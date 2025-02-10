@@ -14,7 +14,7 @@ const productSchema = new mongoose.Schema(
             required:[true,"please provide the product category"],
         },
         tags: {
-            type: [string],
+            type: String,
             default:[],
         },
         price:{
@@ -31,7 +31,7 @@ const productSchema = new mongoose.Schema(
             match:[/.+@.+\..+/,"please provide a valid email adress"],
         },
         images:{
-            type:[string],
+            type:String,
             required:[true,"please upload product images"],
         },
         createdAt:{
