@@ -10,6 +10,27 @@ export default function Product({ name, images, description, price }) {
     }, 2000);
     return () => clearInterval(interval); // Cleanup on unmount
   }, [images]);
+  const handleDelete = async () => {
+    try {
+        const response = await axios.delete(
+            `http://localhost:8000/api/v2/product/delete-product/${_id}`
+        );
+        if (response.status === 200) {
+            alert("Product deleted successfully!");
+            // Reload the page or fetch products again
+            window.location.reload();
+        }
+    } catch (err) {
+        console.error("Error deleting product:", err);
+        alert("Failed to delete product.");
+    }
+};
+<button
+    onClick={handleDelete}
+    className="w-full text-white px-4 py-2 rounded-md bg-red-600 hover:bg-red-400 transition duration-300 mt-2"
+>
+    Delete
+</button>
 
   const currentImage = images[currentIndex];
 

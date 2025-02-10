@@ -289,6 +289,20 @@ router.get("/get-products", async (req, res) => {
       res.status(500).json({ error: "Server Error" });
     }
   });
+  router.delete('/delete-product/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const existingProduct = await Product.findById(id);
+        if (!existingProduct) {
+            return res.status(404).json({ error: 'Product not found.' });
+        }
+        await existingProduct.deleteOne();
+        res.status(200).json({ message: 'Product deleted successfully' });
+    } catch (err) {
+        console.error('Server error:', err);
+        res.status(500).json({ error: 'Server error. Could not delete product.' });
+    }
+});
   
   router.put("/cartproduct/quantity", async (req, res) => {
     const { email, productId, quantity } = req.body;
