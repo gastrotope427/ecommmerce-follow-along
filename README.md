@@ -330,3 +330,8 @@ By completing this milestone, we have learned:
 In this milestone, we created a navigation bar on the homepage where we can see "My Products," "Add Product," and "Cart."
 
 
+# Milestone 16
+
+In this milestone, we updated our product detail file so that we can access more information about our product.
+
+
