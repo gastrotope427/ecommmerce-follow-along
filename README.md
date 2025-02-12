@@ -325,6 +325,8 @@ By completing this milestone, we have learned:
 - How to handle delete operations effectively in a **full-stack** application.
 
 ---
+# Milestone 15
 
+In this milestone, we created a navigation bar on the homepage where we can see "My Products," "Add Product," and "Cart."
 
 
