@@ -339,6 +339,20 @@ router.get("/get-products", async (req, res) => {
       res.status(500).json({ error: "Server Error" });
     }
   });
+  router.get('/product/:id', async (req, res) => {
+    console.log("Fetching products...");
+    const { id } = req.params;
+    try {
+        const product = await Product.findById(id);
+        if (!product) {
+            return res.status(404).json({ error: 'Product not found.' });
+        }
+        res.status(200).json({ product });
+    } catch (err) {
+        console.error('Server error:', err);
+        res.status(500).json({ error: 'Server error. Could not fetch product.' });
+    }
+});
   
   router.get('/product/:id', async (req, res) => {
     const { id } = req.params;
