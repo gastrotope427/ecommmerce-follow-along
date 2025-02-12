@@ -14,6 +14,11 @@ function Product({ id, name, images, description, price }) {
     }, [images]);
 
     const currentImage = images[currentIndex];
+    <button className="w-full text-white px-4 py-2 rounded-md bg-neutral-900 hover:bg-neutral-700 transition duration-300"
+          onClick={() => navigate(`/product/${_id}`)}
+        >
+          More Info
+        </button>
 
     return (
         <div className="bg-neutral-200 p-4 rounded-lg shadow-md flex flex-col justify-between">

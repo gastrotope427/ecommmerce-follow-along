@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { LoginPage, SignupPage, Home, CreateProduct, MyProducts ,Cart } from './routes';
+import { LoginPage, SignupPage, Home, CreateProduct, MyProducts ,Cart , productDetails } from './routes';
 import "./App.css";
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
         <Route path="/create-product" element={<CreateProduct />} />
         <Route path="/my-products" element={<MyProducts />} />
         <Route path="/cart" element={<Cart/>}/>
+        <Route path="/productDetails" element={<ProductDetails/>}/>
       </Routes>
     </BrowserRouter>
   );
@@ -20,6 +21,7 @@ const App = () => {
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ProductDetails from './pages/productDetails';
 
 function Product({ _id, name, images, description, price }) {
     const [currentIndex, setCurrentIndex] = useState(0);
