@@ -335,3 +335,12 @@ In this milestone, we created a navigation bar on the homepage where we can see 
 In this milestone, we updated our product detail file so that we can access more information about our product.
 
 
+
+# milestone 17
+
+In this milestone, we created a cart schema in this and an endpoint to recieve and store prooduct details in cart
+
+# milestone 18
+
+In this milestone, we Create an Backend endpoint for cart page and wrote an endpoint to get products inside cart for user
+
