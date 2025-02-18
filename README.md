@@ -344,3 +344,9 @@ In this milestone, we created a cart schema in this and an endpoint to recieve a
 
 In this milestone, we Create an Backend endpoint for cart page and wrote an endpoint to get products inside cart for user
 
+# milestone 19 
+
+In this milestone, we Create an cart page that display the products inside cart using endpoint we build in milestone 18.
+
+# milestone 20
+In this milestone , 
