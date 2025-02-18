@@ -349,4 +349,4 @@ In this milestone, we Create an Backend endpoint for cart page and wrote an endp
 In this milestone, we Create an cart page that display the products inside cart using endpoint we build in milestone 18.
 
 # milestone 20
-In this milestone , 
+In this milestone , Create and backend endpoint that will send all the user data using mail and Create an frontend profile page that will display all the user data
