@@ -350,3 +350,9 @@ In this milestone, we Create an cart page that display the products inside cart 
 
 # milestone 20
 In this milestone , Create and backend endpoint that will send all the user data using mail and Create an frontend profile page that will display all the user data
+
+
+# milestone 21 
+In this milestone, create address form frontend page
+Create an state that will store input address
+when we click on add address in profile it should navigate to this form page.

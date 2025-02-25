@@ -6,4 +6,6 @@ import MyProducts from './pages/myProducts';
 import Cart from './pages/cart.jsx';
 import productDetails from './pages/productDetails.jsx';
 import profile from './pages/profiles.jsx'
-export { LoginPage, SignupPage, Home, CreateProduct,MyProducts,Cart , productDetails ,profile};
+import CreateAddress from './pages/createAddress.jsx';
+
+export { LoginPage, SignupPage, Home, CreateProduct,MyProducts,Cart , productDetails ,profile , CreateAddress};

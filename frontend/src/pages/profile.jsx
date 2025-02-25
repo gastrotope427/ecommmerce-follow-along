@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import AddressCard from "../components/auth/AddressCard";
 import NavBar from "../components/auth/nav";
+import { useNavigate } from "react-router-dom";
+
 export default function Profile() {
 	const [personalDetails, setPersonalDetails] = useState({
 		name: "",
@@ -9,6 +11,7 @@ export default function Profile() {
 		avatarUrl: "",
 	});
 	const [addresses, setAddresses] = useState([]);
+	const navigate = useNavigate();
 	useEffect(() => {
 		fetch(
 			`http://localhost:8000/api/v2/user/profile?email=${"ayan10092018@gmail.com"}`,
@@ -32,6 +35,9 @@ export default function Profile() {
 				console.log("Addresses fetched:", data.addresses);
 			});
 	}, []);
+	const handleAddAddress =() =>{
+		navigate("/create-address");
+	};
 	return (
 		<>
 			<NavBar />
@@ -96,7 +102,9 @@ export default function Profile() {
 						</div>
 						<div className="w-full h-max p-5">
 							<button className="w-max px-3 py-2 bg-neutral-600 text-neutral-100 rounded-md text-center hover:bg-neutral-100 hover:text-black transition-all duration-100">
+								onClick={handleAddAddress}
 								Add Address
+								
 							</button>
 						</div>
 						<div className="w-full h-max flex flex-col gap-5 p-5">
