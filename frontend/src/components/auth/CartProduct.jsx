@@ -17,7 +17,7 @@ export default function CartProduct({ _id, name, images, quantity, price }) {
         updateQuantityVal(newquantityVal);
 	};
 	const handleDecrement = () => {
-        const newquantityVal = quantityVal > 1 ? quantityVal - 1 : 1;
+        const newquantityVal = a > 1 ? quantityVal - 1 : 1;
 		setQuantityVal(newquantityVal);
         updateQuantityVal(newquantityVal);
 	};
