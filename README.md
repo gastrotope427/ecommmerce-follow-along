@@ -359,10 +359,14 @@ when we click on add address in profile it should navigate to this form page.
 
 
 # milestone 22
-In this milestone , 
+In this milestone , You need to create an endpoint that will receive the address from address form in frontend
+Add the address to the address array inside user collection.
 
 
 # milestone 23
 In this milestone ,Create an placeorder button inside cart page and navigate to select address page when clicked.
 Create and select address page that will display all the available address and have an option to select one address.
 Write an backend endpoint that will send all the addresses of the user.
+
+# milestone 24
+
