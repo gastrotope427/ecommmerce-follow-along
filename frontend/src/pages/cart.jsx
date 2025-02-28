@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 import CartProduct from '../components/auth/CartProduct';
 import NavBar from '../components/auth/Nav';
 import { useState, useEffect } from 'react';
 
 const Cart = () => {
     const [products, setProducts] = useState([]);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch("http://localhost:8000/api/v2/product/cartproducts?email=${'haryy@gmail.com'}")
@@ -23,6 +27,9 @@ const Cart = () => {
     }, []);
 
     console.log("Products:", products);
+    const handlePlaceOrder = () =>{
+        navigate('/selectaddress');
+    }
 
     return (
         <div>
@@ -34,6 +41,7 @@ const Cart = () => {
     );
 };
 
+onclick={handlePlaceOrder}
 return (
     <div className='w-full h-screen'>
         <NavBar />
