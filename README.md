@@ -363,4 +363,6 @@ In this milestone ,
 
 
 # milestone 23
-In this milestone ,
+In this milestone ,Create an placeorder button inside cart page and navigate to select address page when clicked.
+Create and select address page that will display all the available address and have an option to select one address.
+Write an backend endpoint that will send all the addresses of the user.
